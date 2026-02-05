@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Минималистичный лендинг | Bulma.css</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        .section-spacing {
+            padding: 4rem 1.5rem;
+        }
+
+        .card-spacing {
+            margin-bottom: 2rem;
+        }
+
+        .columns.is-multiline .column.is-5 .card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-content {
+            flex-grow: 1;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="">
+                            <div style="margin-right: 10px;">
+                                <img src="assets/icon/logo.jpg" alt="" width="50" height="50"
+                                    style="border-radius: 8px; object-fit: cover;">
+                            </div>
+                            <svg width="80" height="40" viewBox="0 0 80 40">
+                                <text x="40" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="20"
+                                    font-weight="bold" fill="white">
+                                    Grigg
+                                </text>
+                            </svg>
+                        </a>
+
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                            data-target="navbarBasicExample">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div id="navbarBasicExample" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="navbar-item">
+                                Акции
+                            </a>
+
+                            <a class="navbar-item">
+                                Контакты
+                            </a>
+
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                <a class="navbar-link">
+                                    Каталог
+                                </a>
+
+                                <div class="navbar-dropdown">
+                                    <a class="navbar-item">
+                                        Курсы
+                                    </a>
+                                    <a class="navbar-item">
+                                        Задания
+                                    </a>
+                                    <a class="navbar-item">
+                                        Игры
+                                    </a>
+                                    <hr class="navbar-divider">
+                                    <a class="navbar-item">
+                                        Сообщить об ошибке
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="navbar-end">
+                            <div class="navbar-item">
+                                <div class="buttons">
+                                    <a class="button is-primary">
+                                        <strong>Регистрация</strong>
+                                    </a>
+                                    <a class="button is-light">
+                                        Вход
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero is-medium is-link">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title is-1">
+                        Найдите то, что подходит Вам
+                    </h1>
+                    <h2 class="subtitle is-4">
+                        Сотни направлений и миллионы заданий для подготовки на любую тему!
+                    </h2>
+                    <div class="buttons is-centered">
+                        <a href="#pricing" class="button is-large is-light">
+                            <span>Выбрать курс</span>
+                        </a>
+                        <a href="#pricing" class="button is-large is-light">
+                            <span>Выбрать задание</span>
+                        </a>
+                        <a href="#pricing" class="button is-large is-light">
+                            <span>Выбрать игру</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section has-text-centered">
+            <h1 class="title is-centered">Сделай первый шаг!</h1>
+            <h2 class="subtitle">
+                Достаточно просто выбрать интересующее, и процесс пойдет сам
+            </h2>
+        </section>
+
+        <div class="columns is-centered is-multiline">
+
+            <div class="column is-5">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="assets/img/python.png" alt="Python">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="title is-4">Python-разработчик</p>
+                            <p class="subtitle is-6 has-text-grey">10 месяцев · с трудоустройством</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-5">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="assets/img/3d-gen.png" alt="3D-дженералист">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="title is-4">3D-дженералист</p>
+                            <p class="subtitle is-6 has-text-grey">6 месяцев · с трудоустройством</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-5">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="assets/img/grafdes.png" alt="Дизайнер">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="title is-4">Графический дизайнер</p>
+                            <p class="subtitle is-6 has-text-grey">12 месяцев · с трудоустройством</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-5">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="assets/img/ai.png" alt="Нейросети">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="title is-4">Специалист по нейросетям</p>
+                            <p class="subtitle is-6 has-text-grey">8 месяцев · с трудоустройством</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="hero is-success is-halfheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title is-1">
+                        О нас
+                    </h1>
+                    <h2 class="subtitle is-4">
+                        Посмотрите видео, в котором лучше узнаете о том, что происходит внутри
+                    </h2>
+                    <div class="buttons is-centered">
+                        <a href="#how-it-works" class="button is-large is-outlined is-light">
+                            <span class="icon">
+                                <i class="fas fa-play"></i>
+                            </span>
+                            <span>Смотреть видео</span>
+                        </a>
+                        <a href="#footer" class="button is-large is-light">
+                            <span>Узнать техническую информацию</span>
+                            <span class="icon">
+                                <i class="fas fa-arrow-down"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section py-6">
+            <div class="container">
+                <h2 class="title is-2 has-text-centered mb-6">Отзывы от наших клиентов</h2>
+
+                <div class="columns is-centered is-multiline">
+
+                    <div class="column is-6">
+                        <div class="box" style="height: 100%;">
+                            <div class="content">
+                                <blockquote class="is-italic is-size-5 mb-5">
+                                    «После курса получил 3 оффера. Выбрал международную компанию
+                                    с зарплатой в 2.5 раза выше, чем на предыдущем месте.
+                                    Теперь работаю удаленно из любой точки мира!»
+                                </blockquote>
+
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-5 mb-1">Менеджер по продажам → Аналитик данных</p>
+                                        <p class="subtitle is-6">Кирилл Волков</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6">
+                        <div class="box" style="height: 100%;">
+                            <div class="content">
+                                <blockquote class="is-italic is-size-5 mb-5">
+                                    «В 35 лет кардинально сменила профессию.
+                                    Сейчас руковожу отделом дизайна в крупном банке.
+                                    Мечты сбываются, если не бояться перемен!»
+                                </blockquote>
+
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-5 mb-1">Бухгалтер → UX/UI-дизайнер</p>
+                                        <p class="subtitle is-6">Анна Мельникова</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="content has-text-centered">
+            <div class="mb-5">
+                <p class="mb-3">
+                    <strong>Официальный образовательный портал</strong> © 2018-2026. Все права защищены.
+                </p>
+                <p class="mb-3">
+                    Мы — ведущая образовательная платформа, специализирующаяся на профессиональной переподготовке
+                    и повышении квалификации в digital-сфере. Наша миссия — сделать качественное образование
+                    доступным для каждого, независимо от возраста, места жительства и предыдущего опыта.
+                </p>
+                <p class="mb-3">
+                    За 8 лет работы мы помогли более 150,000 учеников найти себя в новой профессии,
+                    освоить востребованные навыки и построить успешную карьеру в IT, дизайне, маркетинге
+                    и других перспективных направлениях.
+                </p>
+            </div>
+
+            <div class="mb-5">
+                <h3 class="title is-5 mb-3">Контакты</h3>
+                <div class="columns is-centered">
+                    <div class="column is-4">
+                        <p class="mb-2">
+                            <span class="icon has-text-primary">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <strong>Электронная почта:</strong>
+                        </p>
+                        <p><a href="mailto:support@skillup-platform.ru">griggs-support@mail.ru</a></p>
+                        <p><a href="mailto:partners@skillup-platform.ru">griggs-general@mail.ru</a></p>
+                    </div>
+                    <div class="column is-4">
+                        <p class="mb-2">
+                            <span class="icon has-text-primary">
+                                <i class="fas fa-phone"></i>
+                            </span>
+                            <strong>Телефоны:</strong>
+                        </p>
+                        <p>8-800-555-35-35</p>
+                    </div>
+                    <div class="column is-4">
+                        <p class="mb-2">
+                            <span class="icon has-text-primary">
+                                <i class="fas fa-clock"></i>
+                            </span>
+                            <strong>Часы работы:</strong>
+                        </p>
+                        <p>Пн-Пт: 9:00-21:00</p>
+                        <p>Сб-Вс: 10:00-14:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-5">
+                <h3 class="title is-5 mb-3">Юридическая информация</h3>
+                <p class="is-size-7 mb-2">
+                    ООО "Григгс Образование", ИНН 1234567890, ОГРН 1234567890123
+                </p>
+                <p class="is-size-7 mb-2">
+                    123456, г. Москва, ул. Григовская, д. 1, стр. 1
+                </p>
+                <p class="is-size-7">
+                    Лицензия на образовательную деятельность №123456 от 01 января 2018 года,
+                    выданная Департаментом образования города Москвы
+                </p>
+            </div>
+
+            <div class="mb-4">
+                <a href="#" class="mr-4">Политика конфиденциальности</a>
+                <a href="#" class="mr-4">Пользовательское соглашение</a>
+                <a href="#" class="mr-4">Оферта</a>
+                <a href="#" class="mr-4">Реквизиты</a>
+            </div>
+
+            <div>
+                <p class="is-size-7 has-text-grey">
+                    Весь контент на этом сайте защищен авторским правом. Любое копирование,
+                    распространение или использование материалов без письменного разрешения запрещено.
+                </p>
+                <p class="is-size-7 has-text-grey mt-2">
+                    Griggs не является частью, аффилированным или связанным лицом каких-либо
+                    других образовательных учреждений или компаний.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griggs - Страница не найдена</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="shortcut icon" href="assets/icon/logo.jpg" type="image/x-icon">
+    <style>
+        .section-spacing {
+            padding: 4rem 1.5rem;
+        }
+
+        .card-spacing {
+            margin-bottom: 2rem;
+        }
+
+        .columns.is-multiline .column.is-5 .card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-content {
+            flex-grow: 1;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Стили для 404 страницы */
+        .error-number {
+            font-size: 12rem;
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(135deg, #485fc7 0%, #6a8cff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 10px 20px rgba(72, 95, 199, 0.2);
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .error-divider {
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #485fc7, #48c774);
+            margin: 2rem auto;
+            border-radius: 2px;
+        }
+        
+        .error-illustration {
+            max-width: 400px;
+            margin: 2rem auto;
+            opacity: 0.9;
+        }
+        
+        .error-illustration svg {
+            width: 100%;
+            height: auto;
+        }
+        
+        .button.is-primary {
+            background-color: #485fc7;
+            transition: all 0.3s;
+        }
+        
+        .button.is-primary:hover {
+            background-color: #3a4fa0;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(72, 95, 199, 0.3);
+        }
+        
+        .button.is-light:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .suggested-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .suggested-link {
+            padding: 0.75rem 1.5rem;
+            background-color: #f5f5f5;
+            border-radius: 50px;
+            color: #485fc7;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .suggested-link:hover {
+            background-color: #485fc7;
+            color: white;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="index.html">
+                            <div style="margin-right: 10px;">
+                                <img src="assets/icon/logo.jpg" alt="" width="50" height="50"
+                                    style="border-radius: 8px; object-fit: cover;">
+                            </div>
+                            <svg width="80" height="40" viewBox="0 0 80 40">
+                                <text x="40" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="20"
+                                    font-weight="bold" fill="white">
+                                    Grigg
+                                </text>
+                            </svg>
+                        </a>
+
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                            data-target="navbarBasicExample">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div id="navbarBasicExample" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="navbar-item">
+                                Акции
+                            </a>
+
+                            <a class="navbar-item" href="contacts.html">
+                                Контакты / Отзывы
+                            </a>
+
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                <a class="navbar-link">
+                                    Каталог
+                                </a>
+
+                                <div class="navbar-dropdown">
+                                    <a class="navbar-item">
+                                        Курсы
+                                    </a>
+                                    <a class="navbar-item">
+                                        Задания
+                                    </a>
+                                    <a class="navbar-item">
+                                        Игры
+                                    </a>
+                                    <hr class="navbar-divider">
+                                    <a class="navbar-item">
+                                        Сообщить об ошибке
+                                    </a>
+                                </div>
+                            </div>
+
+                            <a class="navbar-item" href="faq.html">
+                                FAQ
+                            </a>
+                        </div>
+
+                        <div class="navbar-end">
+                            <div class="navbar-item">
+                                <div class="buttons">
+                                    <a class="button is-primary">
+                                        <strong>Регистрация</strong>
+                                    </a>
+                                    <a class="button is-light">
+                                        Вход
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-8 has-text-centered">
+                        
+                        <div class="error-number">
+                            404
+                        </div>
+                        
+                        <h1 class="title is-2">Страница не найдена</h1>
+                        
+                        <div class="error-divider"></div>
+                        
+                        <h2 class="subtitle is-5 mb-5" style="color: white; max-width: 500px; margin-left: auto; margin-right: auto;">
+                            Кажется, вы забрели не туда. Возможно, эта страница была удалена или никогда не существовала.
+                        </h2>
+                        
+                        <p class="mb-5" style="color: white;">
+                            Но не переживайте! У нас есть много интересных курсов, которые ждут именно вас.
+                        </p>
+                        
+                        <div class="buttons is-centered">
+                            <a href="index.html" class="button is-primary is-large">
+                                <span class="icon">
+                                    <i class="fas fa-home"></i>
+                                </span>
+                                <span>На главную</span>
+                            </a>
+                            <a href="faq.html" class="button is-light is-large">
+                                <span class="icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </span>
+                                <span>FAQ</span>
+                            </a>
+
+                            <a href="contacts.html" class="button is-light is-large">
+                                <span class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                <span>Оставить отзыв</span>
+                            </a>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="content has-text-centered">
+            <div class="mb-5">
+                <p class="mb-3">
+                    <strong>Официальный образовательный портал</strong> © 2018-2026. Все права защищены.
+                </p>
+                <p class="mb-3">
+                    Мы — ведущая образовательная платформа, специализирующаяся на профессиональной переподготовке
+                    и повышении квалификации в digital-сфере. Наша миссия — сделать качественное образование
+                    доступным для каждого, независимо от возраста, места жительства и предыдущего опыта.
+                </p>
+                <p class="mb-3">
+                    За 8 лет работы мы помогли более 150,000 учеников найти себя в новой профессии,
+                    освоить востребованные навыки и построить успешную карьеру в IT, дизайне, маркетинге
+                    и других перспективных направлениях.
+                </p>
+            </div>
+
+            <div class="mb-5">
+                <h3 class="title is-5 mb-3">Контакты</h3>
+                <div class="columns is-centered">
+                    <div class="column is-4">
+                        <p class="mb-2">
+                            <span class="icon has-text-primary">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <strong>Электронная почта:</strong>
+                        </p>
+                        <p><a href="mailto:support@skillup-platform.ru">griggs-support@mail.ru</a></p>
+                        <p><a href="mailto:partners@skillup-platform.ru">griggs-general@mail.ru</a></p>
+                    </div>
+                    <div class="column is-4">
+                        <p class="mb-2">
+                            <span class="icon has-text-primary">
+                                <i class="fas fa-phone"></i>
+                            </span>
+                            <strong>Телефоны:</strong>
+                        </p>
+                        <p>8-800-555-35-35</p>
+                    </div>
+                    <div class="column is-4">
+                        <p class="mb-2">
+                            <span class="icon has-text-primary">
+                                <i class="fas fa-clock"></i>
+                            </span>
+                            <strong>Часы работы:</strong>
+                        </p>
+                        <p>Пн-Пт: 9:00-21:00</p>
+                        <p>Сб-Вс: 10:00-14:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-5">
+                <h3 class="title is-5 mb-3">Юридическая информация</h3>
+                <p class="is-size-7 mb-2">
+                    ООО "Григгс Образование", ИНН 1234567890, ОГРН 1234567890123
+                </p>
+                <p class="is-size-7 mb-2">
+                    123456, г. Москва, ул. Григовская, д. 1, стр. 1
+                </p>
+                <p class="is-size-7">
+                    Лицензия на образовательную деятельность №123456 от 01 января 2018 года,
+                    выданная Департаментом образования города Москвы
+                </p>
+            </div>
+
+            <div class="mb-4">
+                <a href="#" class="mr-4">Политика конфиденциальности</a>
+                <a href="#" class="mr-4">Пользовательское соглашение</a>
+                <a href="#" class="mr-4">Оферта</a>
+                <a href="#" class="mr-4">Реквизиты</a>
+            </div>
+
+            <div>
+                <p class="is-size-7 has-text-grey">
+                    Весь контент на этом сайте защищен авторским правом. Любое копирование,
+                    распространение или использование материалов без письменного разрешения запрещено.
+                </p>
+                <p class="is-size-7 has-text-grey mt-2">
+                    Griggs не является частью, аффилированным или связанным лицом каких-либо
+                    других образовательных учреждений или компаний.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
